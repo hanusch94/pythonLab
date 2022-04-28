@@ -1,0 +1,4 @@
+Ez van a fájl első sorában
+2. sor
+3. sor
+4. azaz utolsó sor

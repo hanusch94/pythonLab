@@ -1,0 +1,5 @@
+1	2	10	Róbert
+2	4	12	Gábor
+1	2	11	Lidi
+1	54	9	Zita
+3	2	3	Gergő
