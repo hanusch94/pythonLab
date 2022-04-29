@@ -1,7 +1,7 @@
 # pythonLab
 
 A pyhonLab egy középiskolai informatikai szakkörhöz készült jegyzet.
-A jegyzet folyamatosan bővül. Az tervezett és folyamatban lévő változtatások a projekt fülön találhatók.
+A jegyzet folyamatosan bővül. Az tervezett és folyamatban lévő változtatások a projekt fülön találhatók.(https://github.com/hanusch94/pythonLab/projects/1)
 
 # Letöltés Zip-ként:
 Code alatt le tudjuk tölteni a download zip-pel.
