@@ -1,4 +1,4 @@
-# pythonLab
+# pythonLab leírás
 
 A pyhonLab egy középiskolai informatikai szakkörhöz készült jegyzet.
 
