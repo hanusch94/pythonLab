@@ -9,7 +9,7 @@ Code alatt le tudjuk tölteni a download zip-pel.
 # GIT TUTORIAL
 ## Motiváció
 Amikor többen fejlesztünk egy kódrészletet, az egyik legbonyolultabb pont, hogy hogyan egységesítsük a változtatásainkat. Erre egy megoldás a git. A cél, hogy egy feladat lefejlesztése után ne az egész kódot töltsük fel, hanem csak a változtatásokat. Így még ha egy fájlt is érintettek változások, akkor is össze tudjuk hasonlítani a módosításokat és viszonylag gyorsan össze tudjuk rakni a végleges megoldást.
-Ezen kívül nagyon kényelmes felületet ad az új verzióra frissítéshez.
+Ez a téma először macerásnak tűnhet viszont minden cégnél így oldják meg, hogy párhuzamosan tudjanak egy kódon dolgozni, ezért mindenképp érdemes megismerni. Ha ezt kihagynánk, akkor a zip megoldás lehet számunkra, ám így nem tudjuk összehúzni a szerver és a saját gépen lévő változtatásainkat.
 
 ## Az alkalmazás első verziójának a leszedése
 ### Visual Studio Code (később VS Code)
@@ -48,4 +48,22 @@ Az itteni leírásban csak az itt szükséges szintet nézzük. A későbbiekben
 - - - - - - - ![image](https://user-images.githubusercontent.com/13373740/166064169-2453bfb0-5654-4965-ab3b-a1444bd08aa9.png)
 
 ## Új verzió letöltése
-
+A git használatának a legnagyobb előnye, hogy írhatunk a jegyzetbe, mert amikor új verzió jön, a változásokat húzzuk csak le vele. Ha egy fájlon módosított a változás és te is, akkor conflict keletkezik. Ezeket kézzel fel tudjuk oldani, és a saját jegyzettel haladni tovább.
+Az új verziót a következőképp tudjuk letölteni:
+- Navigáljunk a Source Control (git) csempére a VS Code bal oldalán
+- Itt látjuk a változtatásokat, a changes alatt
+- - - - - - - ![image](https://user-images.githubusercontent.com/13373740/166070834-ff065294-c85e-484f-86cf-a9eec6880e12.png)
+- Első lépésben commitolni kell a változtatásainkat (Ez a parancs arra való, hogy egy csomagba pakoljuk a változtatásokat, így össze tudjuk hasonlítani a lehúzott verzióval)
+- Ehhez ki kell valamit írni a message mezőbe, majd a pipára nyomni.
+- Mivel nem szeretnénk a változtatásokat feltölteni a gitre, csak lehúzni az új dolgokat a gitről, nem számít, milyen üzenetet írunk ide esetünkben "a"
+- - - - - - - ![image](https://user-images.githubusercontent.com/13373740/166073643-0d0a512b-c175-4635-b334-1d3d6e8b0ffb.png)
+- NE NYOMJUNK RÁ! Ekkor megjelenik egy kék gomb, ami arra való, hogy minden változtatást letöltsön, és/vagy feltöltsön a szerverre.
+- Ehelyett a ...-nál nyomjunk a pull gombra. Ezzel csak a szerver változtatásait húzzuk le
+- - - - - - - ![image](https://user-images.githubusercontent.com/13373740/166074279-b3553cfd-c667-4dbd-9fdd-2a81b1ad5565.png)
+- Így ha nem volt ütközés (konflict), már utána is van húzva a jegyzetünk.
+- Ha volt valami, amit nem tudott feloldani a git, a változtatásoknál megjelenik a merge branch kiirat
+- Itt egyessével végig lépkedve tudjuk nézni, hogy milyen változtatások voltak a saját gépen és a szerveren
+- A fájlokban a kiválasztott verzió felett az Accept gomb megnyomásával tudjuk kiválasztani, melyik verzióval menjünk tovább. (Ha ilyennel találkozunk, érdemes végignézni compare changes nézetet, hogy pontosan mire jó)
+- Ha mindent feloldottunk, a merge listán a + jellel tudjuk menteni a döntéseinket
+- Ezt követően comittal tudjuk ellenőrizni, hogy minden rendben van-e
+- - - - - - - ![image](https://user-images.githubusercontent.com/13373740/166075610-b78da85f-d964-4bac-bad8-6d9eb9b85bd0.png)
